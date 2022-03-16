@@ -1,5 +1,5 @@
 # test_app.py
-from app import app
+from hello import app
 
 
 def test_hello():
