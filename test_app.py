@@ -1,10 +1,10 @@
 # test_app.py
-from hello import hangman
+from hello import app
 
 
 def test_hello():
     
-    response = hangman.test_client().get('/')
+    response = app.test_client().get('/')
 
     assert response.status_code == 200
-    assert response.data == b'word.upper()'
+    assert response.data == b'Hello, YouTube!'
